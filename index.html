@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Paaji+2&family=Baloo+Tammudu+2&family=Bangers&family=Bebas+Neue&family=Kanit:wght@100&family=Nunito+Sans:wght@600&family=Oswald:wght@400;500&family=Phudu:wght@600&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="brand.png" alt="" height="100" width="170"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light  "   aria-current="page" href="#" id="abc1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#" id="abc1">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#" id="abc1">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#" id="abc1">Item</a>
+              </li>
+              
+            </ul>
+            <form class="search-container d-flex me-3" role="search">
+              <input class="search-input me-2" name="search" type="text" placeholder="Search....." aria-label="Search">
+              <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>      
+        </a>
+            </form>
+        </div>
+      </nav>
+      
+      <!--section-->
+      <section class="homesection" id="home">
+       <div class="shape1 mb-5">
+
+       </div>
+       <div class="container ">
+        <div class="row align-items-center">
+          <div class="homecontent">
+            <h2>download your favourite movie here</h3>
+              <br>
+            <h3>Welcome to <span id="span">Gameflix </span></h2>
+          </div>
+        </div>
+        <a href="#about" class="scrolldown">
+          <img src="run.png"alt="">
+        </a>
+       </div>
+      </section>
+      <!--carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video autoplay loop muted plays-inline class="d-block w-100" >
+              <source src="call of work.mp4">
+             </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Call Of Duty 4</h1>
+              <p>Now experience some of the great shooting graphics with the nightvision and FPS mode.</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <video autoplay loop muted plays-inline class="d-block w-100" >
+               <source src="WhatsApp Video 2023-03-11 at 1.35.48 PM.mp4">
+              </video>
+            <div class="carousel-caption ">
+              <h1>Asphalt 9: Legend</h1>
+              <p>Here is the game that breaks the rule. A game for all dreamers, the outsiders and the rebels.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video autoplay loop muted plays-inline class="d-block w-100" >
+              <source src="Untitled video - Made with Clipchamp.mp4">
+             </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Disney Dreamlight Valley </h1>
+              <p>Explore a world filled with magic of Disney! Discover Rich stories alongside Disney Villians.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--section-->
+      <div class="section" id="toknow">
+        <div class="container mt-5 ">
+            <div class="row mt-5">
+                <div class="col-sm-6 col-md-6 col-xs-12 mt-3">
+                  <img src="to kno2.webp" alt="">
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-12">
+                   <div class="display-4 mt-5"  id="ds">TO KNOW MORE CLICK ON THE BUTTON</div>
+                   <P class="lead mt-5" id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. itia rerum ms veniam reprehenderit officia, ipsa dicta quo, accusamus consequuntur!</P>
+                   <div class="btn btn-outline-warning rounded-pill mt-5" id="click">Click Me</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+       <!--categorey-->
+       <section class="servicesection" id="category">
+        <div class="container">
+          <div class="row">
+            <div class="service-title mt-5" id="cat">
+              <h1>Categories</h1>
+            </div>
+            <div class="row">
+              <div class="col g-5 service-items ">
+                <div class="serviceiteminner">
+                  <img src="sec1.jpg" alt="category1" style="width: 20rem;" >
+                  <div class="overlay">
+                    <h3>Adventure</h3>
+                  </div>
+                </div>
+              </div>
+              <div class=" col g-5 service-items">
+                <div class="serviceiteminner">
+                  <img src="sec2.jpg" alt="category1" style="width: 20rem;">
+                  <div class="overlay">
+                    <h3>Action</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col g-5 service-items">
+                <div class="serviceiteminner">
+                  <img src="sec3.jpg" alt="category1" style="width: 20rem;">
+                  <div class="overlay">
+                    <h3>Arcade</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="row">
+              <div class="col g-5 service-items ">
+                <div class="serviceiteminner">
+                  <img src="sec4.jpg" alt="category1" style="width: 20rem;" >
+                  <div class="overlay">
+                    <h3>Shooting</h3>
+                  </div>
+                </div>
+              </div>
+              <div class=" col g-5 service-items">
+                <div class="serviceiteminner">
+                  <img src="data:image/jpeg;base64,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" alt="category1" style="width: 20rem;">
+                  <div class="overlay">
+                    <h3>Sport</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col g-5 service-items">
+                <div class="serviceiteminner">
+                  <img src="sec6.jpg" alt="category1" style="width: 20rem;">
+                  <div class="overlay">
+                    <h3>Simulation</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+        </div>
+      </section>
+     
+      <!--star card-->
+    
+      <div class="sectionnew mt-5">
+        <video autoplay loop muted plays-inline class="backvideo">
+          <source src="sky.mp4" type="video/mp4">
+        </video>
+       
+        <div class="container">
+        <h1>NOW PLAY THE ALL NEW RELEASED STAR-TROPPER</h1>
+        <br>
+     
+        <a href="#">Play Now</a>
+        <br>
+        
+        <h2>YOUR OWN STORY IN FORZEVERSE</h2>
+        </div>
+      </div>
+      <!--Top rated section-->
+      <div class="section mt-5" id="top">
+       <div class="container">
+        <div class="row">
+          <div class="section-title" id="rated">
+            <h1>Top-Rated Games</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col g-5 work-items ">
+            <div class="workiteminner">
+              <video autoplay loop muted plays-inline style="width: 22rem;" > 
+                <source src="wicth.mp4" type="video/mp4" >
+              </video>
+              <div class="overlay">
+                <h3>The Witcher</h3>
+              </div>
+            </div>
+          </div>
+          <div class=" col g-5 work-items">
+            <div class="workiteminner">
+              <video autoplay loop muted plays-inline style="width: 22rem;">
+              <source src="call of grow.mp4">
+            </video>
+              <div class="overlay">
+                <h3>Call Of Duty</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col g-5 work-items">
+            <div class="workiteminner">
+              <video  autoplay loop muted plays-inline style="width:22rem">
+                <source src="motabhai.mp4">
+              </video>
+              <div class="overlay">
+                <h3>Mortal Kombat</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col g-5 work-items ">
+            <div class="workiteminner">
+             <video autoplay loop muted plays-inline style="width:22rem">
+            <source src="titafall.mp4"> 
+            </video>
+              <div class="overlay">
+                <h3>Tital Fall</h3>
+              </div>
+            </div>
+          </div>
+          <div class=" col g-5 work-items">
+            <div class="workiteminner">
+              <video autoplay loop muted plays-inline style="width:22rem">
+                <source src="cyber.mp4" >
+              </video>
+              <div class="overlay">
+                <h3>Cyberpunk</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col g-5 work-items">
+            <div class="workiteminner">
+              <video autoplay loop muted plays-inline>
+                <source src="valo.mp4">
+              </video>
+              <div class="overlay">
+                <h3>Valorant</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+      
+    
+      <!--Cards-->
+      <div class="gallery mt-5">
+        <div class="container">
+          <div class="text text-center" id="online">
+            <div class="display-4"> <h2>
+
+              Now play Online games for free 
+            </h2>
+          </div>
+              
+          </div>
+          <br>
+          <!--1st row-->
+          <div class="row ">
+            <div class="col " >
+              <div class="card " style="width: 12rem;" >
+              <img src="ass.webp"  class="card-image-top"alt="" id="image1" >
+              <div class="card-body">
+                <p class="card-text">Assault Zone</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col">
+              <div class="card " style="width: 12rem;">
+              <img src="ro.webp"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Asphalt Retro</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col">
+              <div class="card " style="width: 12rem;">
+              <img src="flip.jpg"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Flip Diving</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="clash.jfif"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Clash Royale</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="dirt.jpg"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Race</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="count.jpg"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Droom </p>
+              </div>
+            
+            </div>
+            </div>
+            </div>
+       <!--2nd row-->
+            <div class="row mt-3">
+              <div class="col " >
+                <div class="card " style="width: 12rem;" >
+                <img src="city.jpg"  class="card-image-top"alt="" id="image1" >
+                <div class="card-body">
+                  <p class="card-text">City Car</p>
+                </div>
+              
+              </div>
+              </div>
+              <div class="col">
+                <div class="card " style="width: 12rem;">
+                <img src="masked.webp"  class="card-image-top"alt="" id="image2" >
+                <div class="card-body">
+                  <p class="card-text">Maskedforce 3</p>
+                </div>
+              
+              </div>
+              </div>
+              <div class="col">
+                <div class="card " style="width: 12rem;">
+                <img src="squid.webp"  class="card-image-top"alt="" id="image2" >
+                <div class="card-body">
+                  <p class="card-text">Squid Game 2 </p>
+                </div>
+              
+              </div>
+              </div>
+              <div class="col ">
+                <div class="card " style="width: 12rem;">
+                <img src="xttr.jpg"  class="card-image-top"alt="" id="image2" >
+                <div class="card-body">
+                  <p class="card-text">X-trial  </p>
+                </div>
+              
+              </div>
+              </div>
+              <div class="col ">
+                <div class="card " style="width: 12rem;">
+                <img src="mech.webp"  class="card-image-top"alt="" id="image2" >
+                <div class="card-body">
+                  <p class="card-text">Mecharlo</p>
+                </div>
+              
+              </div>
+              </div>
+              <div class="col ">
+                <div class="card " style="width: 12rem;">
+                <img src="clash.webp"  class="card-image-top"alt="" id="image2" >
+                <div class="card-body">
+                  <p class="card-text">Clash Tank</p>
+                </div>
+              
+              </div>
+              </div>
+              </div>
+            
+          <!--3rd row-->
+          <div class="row mt-3" id="3row">
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="bmx.jpg"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Bmx Ride</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="bike.webp"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Bike racing </p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="pump.webp"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Pumpkineride</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="mine.webp"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">minecraft</p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="ad.jfif"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Adventurecraft </p>
+              </div>
+            
+            </div>
+            </div>
+            <div class="col ">
+              <div class="card " style="width: 12rem;">
+              <img src="park.jpg"  class="card-image-top"alt="" id="image2" >
+              <div class="card-body">
+                <p class="card-text">Parkour </p>
+              </div>
+            
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="button mt-5">
+          <div class="text-center">
+            <button class="btn  rounded-pill  " id="forbtn">Click Me</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Carousel-->
+    
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./joel-dronkert-K5L3Og0UgOA-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Unleash the Gaming experience</h4>
+            <p>Some of the best gaming site in the game.</p>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="./joao-ferrao-pxnDAT77rVg-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>All types of Mode</h4>
+            <p>Some great gaming mode on the site.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./sander-sammy-2w89rOog-ow-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Next level gaming </h4>
+            <p>Complete your registration as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--About us-->
+    <div class="section mt-5">
+      <div class="container">
+          <div class="row mt-5">
+              <div class="col-sm-6 col-mr-9 col-xs-12 ">
+                  <video autoplay loop muted plays-inline id="img"> 
+                    <source src="flash.mp4" type="video/mp4">
+                  </video>
+              </div>
+              <div class="col-sm-6 col-md-6 col-xs-12">
+                 <div class="display-8" id="ds"><h1>About Us</h1></div>
+                 <P class="lead mt-3" id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. itia rerum minus consequatur quisquam nesciunt quos, adipisci ea ullam earum provident harum omnis? Quod accusamus debitis ullam maxime est laboriosam ad </P>
+                 <br><div class="stats">
+                  <div class="row">
+                    <div class="col stat-box" id="glow">
+                      <h2>50K+</h2>
+                      <h5>Daily Downloads</h5>
+                      
+                    </div>
+                    <div class=" col stat-box" id="glow">
+                      <h2>2500+</h2>
+                      <h5>Games Available</h5>
+                    </div>
+                    <div class=" col stat-box" id="glow">
+                      <h2>500K+</h2>
+                      <h5>Happy Clients</h5>
+                    </div>
+                  </div>
+                </div>
+                  <button class="btn btn-outline-warning rounded-pill mt-5"  id="click1">click me</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--contact section-->
+    <section class="contactus mb-4">
+      <div class="container" id="soom">
+          <div class="section-text text-center mb-4 mt-4 fs-4">
+              <h2>Contact Us</h2>
+              <h3>We'll get to you soon</h3>
+          </div>
+          <form>
+              <div class="row">
+                  <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                      <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+              </div>
+              <div class="form-group mt-3">
+                      <input type="text" placeholder="Subject" class="form-control">
+              </div>
+              <div class="form-group mt-3">
+                  <textarea name="" id="" rows="8" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class=" but text-center mt-4 mb-4" >
+                  <a href="#" class="btn btn-outline-dark rounded-pill " id="fivbtn" >Submit</a>
+              </div>  
+          </form>
+      </div>
+  </section>
+    
+
+    <!--footer-->
+    <div class="footer mt-3">
+      <div class=" text text-center">
+        <div class="display-7">&reg;shindegrishma114@gmail.com</div>
+      </div>
+      </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./jquery-3.6.3.js"></script>
+    <script src="./jquery-ui/jquery-ui.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('#searchbar').click(function()
+            {
+                $('#searchbar').width(500);
+            });
+            $(window).hover(function(){
+                $('#searchbar').width(150);
+            })
+        })
+        $(document).ready(function()
+        {
+            $('#para').hide();
+        });
+        
+        $('#click').click(function()
+        {
+            $('#ds').hide();
+            $('#para').show();
+        });
+        $('#click').dblclick(function()
+        {
+            $('#ds').show();
+            $('#para').hide();
+        });
+        $(document).ready(function(){
+          $('#3row').hide();
+          $('#forbtn').click(function()
+          {
+            $('#3row').toggle(500);
+          });
+          $('#forbtn').dblclick(function()
+          {
+            $('#3row').hide();
+          });
+
+        });
+        $(document).ready(function()
+        {
+          $('#image1').hover(function()
+          {
+            
+            $('#image1').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image2').hover(function()
+          {
+            
+            $('#image2').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image3').hover(function()
+          {
+            
+            $('#image3').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image4').hover(function()
+          {
+            
+            $('#image4').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image5').hover(function()
+          {
+            
+            $('#image5').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image6').hover(function()
+          {
+            
+            $('#image6').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image7').hover(function()
+          {
+            
+            $('#image7').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image8').hover(function()
+          {
+            
+            $('#image8').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+        $(document).ready(function()
+        {
+          $('#image9').hover(function()
+          {
+            
+            $('#image9').animate({
+              opacity : '0.80'
+            },300)
+          })
+        })
+       $(document).ready(function()
+       {
+        $('#cor1').hover(function()
+        {
+          $('#cor1').zoom(400)
+        })
+       })
+
+      $(document).ready(function()
+      {
+        $('.nav-link').hover(function()
+        {
+          $('#abc1').css({color:'red'});
+        })
+      })
+       
+    </script>
+    
+</body>
+</html>

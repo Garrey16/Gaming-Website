@@ -1,0 +1,435 @@
+body{
+    background-color: black;
+     font-family: 'Rubik', sans-serif;
+     font-weight: 400;
+     color: #c5c4c4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.service-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.service-title h1{
+    font-weight: 500;
+    font-size: 50px;
+}
+@keyframes ani01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.sectionnew{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 30vh;
+    height: 800px;
+    width: 100%;
+   
+}
+
+.backvideo{
+    width: auto;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+.sectionnew h1{
+    margin-top: 30px;
+    width: 460px;
+    font-weight: 500;
+    font-size: 60px;
+   color: #262222;
+   font-family: 'Oswald', sans-serif;
+   text-align: left;
+}
+.sectionnew h2{
+    margin-left: 800px;
+    width: 460px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+   color: #262222;
+   text-align:right;
+}
+
+.sectionnew a{
+  
+    width: 180px;
+   padding: 12px;
+    color: #262222;
+    text-decoration: none;
+    border: 2px solid #262222;
+    border-radius: 21px;
+    margin-right: 1170px;
+}
+.sectionnew a:hover{
+    color: #c5c4c4;
+    background-color: #262222;
+
+}
+
+.homesection{
+    min-height: 30vh;
+    background-image: url('https://wallpaperaccess.com/full/1481223.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    
+}
+.homesection::before{
+content: '';
+position: absolute;
+box-sizing: border-box;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+background-color: #000000;
+opacity: 0.7;
+z-index: -1;
+}
+.homesection .shape1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #FF9800;
+    right: 5%;
+    top: 20%;
+    animation: ani01 5s linear infinite;
+
+}
+.homesection .row{
+    min-height: 100vh;
+}
+.homesection.homecontent{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.homesection .homecontent h3{
+    text-align: center;
+color: #ffffff;
+font-size: 30px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 5px;
+margin: 0;
+}
+.homesection .homecontent h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+.homesection .scrolldown{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    animation: scrolldown 2s ease infinite;
+}
+@keyframes scrolldown{
+0%,20%,50%,80%,100%{
+    transform: translateY(0);
+}
+40%{
+    transform: translateY(-30px);
+}
+40%{
+    transform: translateY(-15px);
+}
+}
+.homesection .scrolldown img{
+    width: 45px;
+    display: block;
+    margin: 2px auto;
+}
+#img{
+    margin-top: 5px;
+    width: 480px;
+    height: 350px;
+    margin-left: 50px;
+    
+  
+}
+
+.stat-box h2{
+    color: #c5c4c4;
+    font-size: 40px;
+ margin: 0 0 5px;
+}
+.stat-box h5{
+    color: #c5c4c4;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+ margin: 0 0 5px;
+}
+
+#click{
+    margin-left: 10px;
+    width: 100px;
+}
+.servicesection .serviceiteminner img{
+    
+    transition: all 0.5s ease;
+}
+.servicesection .serviceiteminner img:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.workiteminner video{
+    width: 90%;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+} 
+.workiteminner:hover video{
+    filter: grayscale(100);
+    transform: scale(1);
+} 
+.workiteminner {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+} 
+#span{
+  font-size: 2.7rem;
+    font-weight: 550;
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+}
+.workiteminner .overlay h3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+
+}
+#ds h1{
+    font-weight: 400;
+    
+}
+.section-title h1{ font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*glowing text*/
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+#glow h2,h5{
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+ 
+  text-align: center;
+  animation: blink 2s infinite;
+  -webkit-animation: blink 12s infinite;
+
+}
+#click1{
+    font-size: 1.2rem;
+    width: 120px;
+    height: 40px;
+    margin-left: 240px;
+}
+#click:hover{
+    box-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ff0000, 0 0 5px #ff8d00, 0 0 18px #ff0000;
+    color: #262222;
+}
+#click1:hover{
+    box-shadow: 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 5px #ffa500, 0 0 10px #ff0000, 0 0 5px #ff8d00, 0 0 18px #ff0000;
+    color: #ffffff;
+}
+.service-title h1{
+    font-weight: 600;
+}
+
+.scrolldown{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.overlay{
+    display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.sociallink{
+    margin-top: 5px;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sociallink img{
+    width: 150px;
+}
+#rock{
+    width: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+
+.card{
+    cursor: pointer;
+}
+
+.contactus{
+    margin-top: 15px;
+    border: 2px solid white;
+    margin: 40px;
+    border-radius: 20px;
+   background-color: white;
+}
+.contactus h2{
+    font-weight: 600;
+    color: #262222;
+}
+.contactus .section-text h3{
+    font-weight: 600;
+    color: #262222;
+}
+.btn{
+    width: 90px;
+
+}
+.card img{
+    
+
+    height: 140px;
+}
+.card-text{
+   text-align: center;
+    font-weight: 800;
+    color: rgb(28, 120, 120);
+}
+.card{
+    border-radius: 10px;
+    background-color:rgb(130, 230, 230);
+    box-shadow: 0px 0px 8px rgb(130, 230, 230);
+    height: 170px;
+}
+.card:hover{
+    color: #262222;
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+#forbtn{
+    width: 120px;
+    color:  rgb(130, 230, 230);
+border: 2px solid rgb(130, 230, 230) ;
+}
+#forbtn:hover{
+    color: #262222;
+    background-color: rgb(126, 243, 243);
+    box-shadow: 0px 0px 8px rgb(130, 230, 230);
+}
+#fivbtn:hover{
+    color: #c5c4c4;
+    background-color: #262222;
+}
+
+#toknow img{
+    margin-left: 70px;
+    width: 450px;
+    height: 320px;
+}
+#carouselExampleCaptions h1{
+    
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+#cat h1{
+    font-weight: 390;
+}
+.search-container{
+    background: #fff;
+    height: 35px;
+    
+    border-radius: 20px;
+    padding: 7px 15px 25px 10px  ;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.search-container:hover > .search-input{
+    width: 400px;
+    height: 30px;
+}
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    color: #262222;
+    font-weight: 380;
+    font-size: 20px;
+    transition: 0.8s;
+
+}
+.search-container .search-btn .fas{
+    color: #4d5151;
+}
+@keyframes hoverShake {
+    0% {transform: skew(0deg,0deg);}
+    25% {transform: skew(5deg, 5deg);}
+    75% {transform: skew(-5deg, -5deg);}
+    100% {transform: skew(0deg,0deg);}
+  }
+
+  .search-container:hover{
+    animation: hoverShake 0.15s linear 3;
+  }
+ .navbar-nav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+ }
+.navbar-nav .nav-link{
+    color: #ffa500;
+}
+#rated h1{
+    font-weight: 400;
+}
+#online h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
